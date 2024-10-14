@@ -31,18 +31,18 @@ function draw() {
   } 
   
   if (displaySet1) {
-    image(imgElp, 100, 100);
-    image(imgEly, 400, 100);
-    image(imgMheg, 100, 400);
-    image(imgWol, 400, 400); 
-    image(imgClutch, 670, 285, 808, 456);
+    image(imgElp, 325, 0, 323.85, 575.85);
+    image(imgEly, 1540, 0, 349, 432);
+    image(imgMheg, 0, 400, 323.85, 575.85);
+    image(imgWol, 1540, 400, 447.75, 540); 
+    image(imgClutch, 650, 285, 808, 456);
   } else {
-    image(imgEnem, 400, 100); 
-    image(imgPlat, 100, 400); 
-    image(imgShrine, 400, 400); 
-    image(imgWhat, 250, 250);
-    image(imgOops, 100, 100);
+    image(imgEnem, 0, 0, 496.2, 531.6); 
+    image(imgPlat, 495, 0, 330, 523.2); 
+    image(imgShrine, 0, 518, 540, 469);
+    image(imgWhat, 538, 515, 445, 445);
+    image(imgOops, 820, 0, 915.2, 514.8);
   }
-  text(mouseX, 0, 180); 
-  text(mouseY, 0, 200); 
+  text(mouseX, 0, 240); 
+  text(mouseY, 0, 260); 
 }
