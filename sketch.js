@@ -20,7 +20,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(2020, 950); 
+  createCanvas(1740, 950); 
 }
 
 function draw() {
@@ -31,11 +31,11 @@ function draw() {
   } 
   
   if (displaySet1) {
-    image(imgElp, 325, 0, 323.85, 575.85);
-    image(imgEly, 1540, 0, 349, 432);
-    image(imgMheg, 0, 400, 323.85, 575.85);
-    image(imgWol, 1540, 400, 447.75, 540); 
-    image(imgClutch, 650, 285, 808, 456);
+    image(imgElp, 1309, 189, 431.8, 767.8);
+    image(imgEly, 0, 409, 453.7, 561.6);
+    image(imgMheg, 883, 189, 431.8, 767.8);
+    image(imgWol, 441, 459, 447.75, 540); 
+    image(imgClutch, 0, 0, 888.8, 501.6);
   } else {
     image(imgEnem, 0, 0, 496.2, 531.6); 
     image(imgPlat, 495, 0, 330, 523.2); 
