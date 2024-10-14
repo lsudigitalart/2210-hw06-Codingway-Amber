@@ -26,8 +26,10 @@ function setup() {
 function draw() {
   if (displaySet1) {
   background(180, 220, 255);
+  textFont("Itim");
   } else {
     background(255, 220, 180);
+    textFont("Comic Neue");
   } 
   
   if (displaySet1) {
@@ -36,13 +38,17 @@ function draw() {
     image(imgMheg, 883, 189, 431.8, 767.8);
     image(imgWol, 441, 459, 447.75, 540); 
     image(imgClutch, 0, 0, 888.8, 501.6);
+    textSize(85);
+    fill(110, 24, 98);
+    text("Clutch! An epic finish.", 915, 118);
   } else {
     image(imgEnem, 0, 0, 496.2, 531.6); 
     image(imgPlat, 495, 0, 330, 523.2); 
     image(imgShrine, 0, 518, 540, 469);
     image(imgWhat, 538, 515, 445, 445);
-    image(imgOops, 820, 0, 915.2, 514.8);
+    image(imgOops, 825, 0, 915.2, 514.8);
+    textSize(100);
+    fill(110, 24, 24);
+    text("Oops! Mis-timed!", 999, 760);
   }
-  text(mouseX, 0, 240); 
-  text(mouseY, 0, 260); 
 }
