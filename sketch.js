@@ -20,9 +20,29 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 800); 
+  createCanvas(2020, 950); 
 }
 
 function draw() {
-  background(220);
+  if (displaySet1) {
+  background(180, 220, 255);
+  } else {
+    background(255, 220, 180);
+  } 
+  
+  if (displaySet1) {
+    image(imgElp, 100, 100);
+    image(imgEly, 400, 100);
+    image(imgMheg, 100, 400);
+    image(imgWol, 400, 400); 
+    image(imgClutch, 670, 285, 808, 456);
+  } else {
+    image(imgEnem, 400, 100); 
+    image(imgPlat, 100, 400); 
+    image(imgShrine, 400, 400); 
+    image(imgWhat, 250, 250);
+    image(imgOops, 100, 100);
+  }
+  text(mouseX, 0, 180); 
+  text(mouseY, 0, 200); 
 }
